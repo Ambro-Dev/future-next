@@ -45,32 +45,28 @@ export function Component() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Welcome to Acme University
-              </h2>
-              <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Learn from anywhere. World-class education at your fingertips.
-              </p>
-            </div>
-            <div className="mx-auto w-full max-w-sm space-y-2">
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  className="max-w-lg flex-1"
-                  placeholder="Enter your email"
-                  type="email"
-                />
+        <section className="w-full bg-hero bg-center bg-cover">
+          <div className="relative py-12 md:py-24 lg:py-32 top-0 left-0 w-full h-full z-10 bg-black/20 flex items-center justify-center flex-col">
+            <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+              <div className="space-y-3">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-6xl">
+                  Welcome to Acme University
+                </h2>
+                <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                  Learn from anywhere. World-class education at your fingertips.
+                </p>
               </div>
-              <Button type="submit">Sign In</Button>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
-                Sign in to access your account.
-                <Link className="underline underline-offset-2" href="#">
-                  Forgot Password?
-                </Link>
-              </p>
+              <div className="mx-auto w-full max-w-sm space-y-2">
+                <Button type="submit" size="lg" className="text-lg">
+                  Sign In
+                </Button>
+                <p className="text-xs text-gray-500 dark:text-gray-400">
+                  Sign in to access your account.
+                  <Link className="underline underline-offset-2" href="#">
+                    Forgot Password?
+                  </Link>
+                </p>
+              </div>
             </div>
           </div>
         </section>

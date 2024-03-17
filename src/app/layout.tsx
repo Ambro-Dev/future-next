@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <SocketProvider>
-        <html lang="en" className="dark">
+        <html lang="en" className="light">
           <body className={inter.className}>
             <NextUIProviders>{children}</NextUIProviders>
           </body>
